@@ -68,6 +68,9 @@ const HomePage = () => {
     };
 
     const findResponse = (query) => {
+        if (['hi', 'hello', 'how are you'].includes(query.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, ' '))) {
+            return "Hi, how can I help you";
+        }
         const match = data.find((item) => item.question.toLowerCase().includes(query.toLowerCase()));
         return match ? match.response : 'Sorry, I couldn’t find the details. Please try rephrasing your query.';
     };
