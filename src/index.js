@@ -27,6 +27,12 @@ const theme = createTheme({
       fontWeight: 500,
       lineHeight: 1.4,
     },
+    h4: {
+      fontFamily: 'Ubuntu',  // Primary font for H3
+      fontSize: '1.25rem',
+      fontWeight: 500,
+      lineHeight: 1.2,
+    },
     body1: {
       fontFamily: 'Open Sans',  // Secondary font for body text
       fontSize: '1rem',
@@ -42,11 +48,11 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#9785BA', // Primary color (can be adjusted as per your need)
-      contrastText: '#fff',
+      main: '#D7C7F4', // Primary color (can be adjusted as per your need)
+      contrastText: '#9785BA',
     },
     secondary: {
-      main: '#D7C7F425', // Secondary solid color fallback for gradients
+      main: '#FAF7FF', // Secondary solid color fallback for gradients
       contrastText: '#fff',
     },
     text: {
